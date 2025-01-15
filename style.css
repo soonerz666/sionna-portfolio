@@ -7,15 +7,25 @@
 
 /* Body Styling */
 body {
-  font-family: 'Vibur', cursive; /* Apply Vibur font */
+  font-family: 'Vibur', cursive;
   background-color: #ffffff; /* White background */
   color: #000000; /* Black text */
   line-height: 1.6;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   min-height: 100vh;
   padding: 20px;
+}
+
+/* Title Styling */
+.projects-title {
+  font-family: 'Vibur', cursive;
+  font-size: 4rem;
+  text-align: center;
+  color: #000000; /* Black color */
+  margin-bottom: 40px; /* Space between title and project cards */
 }
 
 /* Project Grid Styling */
@@ -27,18 +37,41 @@ body {
   width: 100%;
 }
 
-/* Project Card Styling */
+/* Project Cards Styling */
 .project-card {
-  background-color: #cccccc; /* Default color */
   height: 300px;
   position: relative;
   cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
-/* Hover Effect to Scale */
 .project-card:hover {
   transform: scale(1.05);
+}
+
+/* Solid Colors for Each Project Card */
+.project1 {
+  background-color: #FF5722; /* Deep Orange */
+}
+
+.project2 {
+  background-color: #8BC34A; /* Light Green */
+}
+
+.project3 {
+  background-color: #FFC107; /* Amber */
+}
+
+.project4 {
+  background-color: #2196F3; /* Blue */
+}
+
+.project5 {
+  background-color: #FF4081; /* Pink */
+}
+
+.project6 {
+  background-color: #9C27B0; /* Purple */
 }
 
 /* Overlay for Projects */
@@ -57,31 +90,7 @@ body {
 
 .project-card:hover .overlay {
   opacity: 1;
-}
-
-/* Unique Hover Colors for Each Project */
-.project-card:nth-child(1) {
-  background-color: #ff6347; /* Tomato */
-}
-
-.project-card:nth-child(2) {
-  background-color: #ff4500; /* Orange Red */
-}
-
-.project-card:nth-child(3) {
-  background-color: #9370db; /* Medium Purple */
-}
-
-.project-card:nth-child(4) {
-  background-color: #ff8c00; /* Dark Orange */
-}
-
-.project-card:nth-child(5) {
-  background-color: #3cb371; /* Medium Sea Green */
-}
-
-.project-card:nth-child(6) {
-  background-color: #1e90ff; /* Dodger Blue */
+  background-color: rgba(0, 0, 0, 0.6); /* Black overlay */
 }
 
 /* Overlay Text */
@@ -90,5 +99,4 @@ body {
   font-size: 2.2rem;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Vibur', cursive; /* Apply Vibur font to project titles */
 }
