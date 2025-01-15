@@ -12,7 +12,7 @@ body {
   color: #000000; /* Black text */
   line-height: 1.6;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* Align content to the top */
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
@@ -26,6 +26,8 @@ body {
   text-align: center;
   color: #000000; /* Black color */
   margin-bottom: 40px; /* Space between title and project cards */
+  width: 100%; /* Full width to align in the center */
+  text-align: center; /* Center the title */
 }
 
 /* Project Grid Styling */
